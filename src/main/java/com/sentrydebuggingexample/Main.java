@@ -1,14 +1,13 @@
 package com.sentrydebuggingexample;
 
 import io.sentry.Sentry;
-import java.lang.Exception;
 
 public class Main {
 
     public static void main(String[] args) {
 
         Sentry.init(options -> {
-            options.setDsn("https://3e474d6f852f1e06bf475241b3326008@o4508335306244096.ingest.de.sentry.io/4508335317254224");
+            options.setDsn("<YOUR_DSN_HERE>");
             options.setTracesSampleRate(1.0);
             options.setDebug(true);
         });
